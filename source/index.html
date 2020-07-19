@@ -15,11 +15,15 @@
       <include src="build/img/sprite_auto.svg"></include>
     </div>
     <header class="header">
-      <h1 class="header__product-name">Potencialex&#9794;</h1>
-      <video class="video" autoplay loop>
-        <source src="img/video/background-video.mp4" type ='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'>
-        <source src="img/video/background-video.webm" type='video/webm; codecs="vp8, vorbis"'>
-      </video>
+      <div class="video-bg">
+        <div class="video-bg__overlay">
+          <h1 class="header__product-name">Potencialex&#9794;</h1>
+        </div>
+        <video loop="" muted="" autoplay="" poster="img/video/plane.jpg" class="video-bg__video">
+          <source src="img/video/plane.mp4" type="video/mp4">
+          <source src="img/video/plane.webm" type="video/webm">
+        </video>
+      </div>
       <a class="button button--header header__button" href="#order">Buy Now</a>
     </header>
     <main class="main">
