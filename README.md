@@ -12,4 +12,4 @@
 ## Вся разработка ведётся в директории `source`
 ## Итоговый код попадает в директорию `build`
 
-## Ссылка на gh-pages: https://rbeliavtseva.github.io/Afrianska/
+## Ссылка на gh-pages: https://rbeliavtseva.github.io/Potencialex/
