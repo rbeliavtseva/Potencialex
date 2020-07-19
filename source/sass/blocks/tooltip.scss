@@ -1,0 +1,31 @@
+.tooltip {
+  position: absolute;
+  bottom: calc(100% - 25px);
+  right: 0;
+  padding: 0 5px;
+  border-radius: 3px;
+  z-index: 1000;
+  display: none;
+  vertical-align: top;
+  background-color: $color-primary;
+
+  &::before {
+    content: "";
+    position: absolute;
+    z-index: 1001;
+    bottom: -5px;
+    border: 5px solid transparent;
+    border-bottom-width: 0;
+    border-top-color: $color-primary;
+  }
+
+  &::after {
+    bottom: 100%;
+  }
+
+  &::before,
+  &::after {
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}

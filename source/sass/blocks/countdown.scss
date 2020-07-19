@@ -1,0 +1,31 @@
+.countdown {
+  display: inline-block;
+  vertical-align: top;
+  text-align: center;
+  color: $color-white;
+}
+
+.countdown__number {
+  display: inline-block;
+  vertical-align: top;
+  min-width: 70px;
+  padding: 10px;
+  border-radius: 3px;
+  background-color: rgba($color-black, 0.6);
+}
+
+.countdown__time {
+  display: inline-block;
+  vertical-align: top;
+  padding: 15px;
+  font-weight: bold;
+  font-size: 24px;
+  border-radius: 3px;
+  background-color: $color-tertiary;
+}
+
+.countdown__text {
+  display: block;
+  padding-top: 5px;
+  font-size: 16px;
+}

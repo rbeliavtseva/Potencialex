@@ -1,0 +1,43 @@
+.button {
+  padding: 15px;
+  border-radius: 50px;
+  text-decoration: none;
+  font-weight: bold;
+  text-align: center;
+  text-transform: uppercase;
+  outline: none;
+  cursor: pointer;
+
+  &--header {
+    min-width: 300px;
+    border: 2px solid $color-white;
+    color: $color-white;
+    background-color: rgba($color-primary, 0.8);
+
+    &:hover,
+    &:focus {
+      background-color: rgba($color-primary, 1);
+    }
+  }
+
+  &--order {
+    border: none;
+    color: $color-black;
+    background-color: $color-tertiary;
+
+    &:hover,
+    &:focus {
+      background-color: $color-border;
+    }
+  }
+}
+
+@media (max-width: $mobile-max-width) {
+  .button {
+    padding: 10px;
+
+    &--header {
+      min-width: 150px;
+    }
+  }
+}

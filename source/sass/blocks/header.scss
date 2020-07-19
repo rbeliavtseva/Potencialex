@@ -1,0 +1,36 @@
+.header {
+  position: relative;
+  width: 100%;
+  margin-bottom: 25px;
+}
+
+.header__product-name {
+  margin: 0;
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 56px;
+  line-height: 66px;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: $color-white;
+}
+
+.header__button {
+  position: absolute;
+  bottom: 40%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+@media (max-width: $mobile-max-width) {
+  .header__product-name {
+    font-size: 36px;
+    line-height: 46px;
+  }
+
+  .header__button {
+    bottom: 20%;
+  }
+}

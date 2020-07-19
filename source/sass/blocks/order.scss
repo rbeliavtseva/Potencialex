@@ -1,0 +1,158 @@
+.order {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 45px 45px 80px 45px;
+  border-radius: 10px 10px 0 0;
+  background-color: $color-primary;
+}
+
+.order__heading {
+  align-self: flex-start;
+  margin: 0;
+  margin-bottom: 30px;
+  font-size: 42px;
+  line-height: 52px;
+}
+
+.order__container {
+  display: flex;
+  align-items: stretch;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.order__left {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 50%;
+  margin-right: 50px;
+}
+
+.order__form {
+  width: 40%;
+}
+
+.order__price-wrap {
+  width: 100%;
+}
+
+.order__price {
+  display: block;
+  text-align: center;
+  margin: 0;
+  font-weight: bold;
+
+  &--new {
+    margin-bottom: 15px;
+    font-size: 56px;
+    line-height: 66px;
+    color: $color-tertiary;
+  }
+
+  &--old {
+    font-size: 36px;
+    line-height: 46px;
+    text-decoration: line-through;
+    color: $color-black;
+  }
+}
+
+.order__text {
+  margin: 0;
+  text-transform: uppercase;
+  text-align: center;
+  color: $color-white;
+}
+
+.order__offer-text {
+  margin: 0;
+  margin-top: auto;
+  color: $color-black;
+}
+
+.order__button {
+  margin-bottom: 15px;
+}
+
+.order__timer {
+  text-align: center;
+}
+
+.order__timer p {
+  margin: 0;
+  margin-bottom: 20px;
+  font-size: 46px;
+  line-height: 56px;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: $color-tertiary;
+}
+
+@media (max-width: $tablet-max-width) {
+  .order__container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .order__heading {
+    width: 100%;
+    text-align: center;
+  }
+
+  .order__left {
+    width: 100%;
+    margin-right: 0;
+    margin-bottom: 35px;
+  }
+
+  .order__form {
+    width: 100%;
+    max-width: 600px;
+  }
+}
+
+@media (max-width: $mobile-max-width) {
+  .order {
+    padding: 25px 15px;
+  }
+
+  .order__heading {
+    margin-bottom: 20px;
+    font-size: 26px;
+    line-height: 36px;
+  }
+
+  .order__product img {
+    width: 165px;
+    height: 115px;
+  }
+
+  .order__price {
+    &--old {
+      font-size: 26px;
+      line-height: 36px;
+    }
+
+    &--new {
+      font-size: 46px;
+      line-height: 56px;
+    }
+  }
+
+  .order__text,
+  .order__offer-text {
+    font-size: 14px;
+    line-height: 24px;
+  }
+
+  .order__timer p {
+    font-size: 36px;
+    line-height: 46px;
+  }
+
+  .order input {
+    padding: 10px;
+  }
+}

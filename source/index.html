@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="Potencialex" content="Potencialex">
+    <title>Potencialex</title>
+    <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll/dist/smooth-scroll.polyfills.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.min.css">
+  </head>
+  <body>
+    <div style="display: none;">
+      <include src="build/img/sprite_auto.svg"></include>
+    </div>
+    <header class="header">
+      <h1 class="header__product-name">Potencialex&#9794;</h1>
+      <video class="video" autoplay loop>
+        <source src="img/video/background-video.mp4" type ='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'>
+        <source src="img/video/background-video.webm" type='video/webm; codecs="vp8, vorbis"'>
+      </video>
+      <a class="button button--header header__button" href="#order">Buy Now</a>
+    </header>
+    <main class="main">
+      <section class="features">
+        <h2 class="visually-hidden">Features </h2>
+        <div class="slider">
+          <div class="slider__wrapper">
+            <ul class="slider__list">
+              <li class="slider__item">
+                <picture>
+                  <source type="image/webp" media="(max-width: 1023px)" srcset="img/slider-1-tablet@1x.webp 1x, img/slider-1-tablet@2x.webp 2x">
+                  <source type="image/webp" srcset="img/slider-1-desktop@1x.webp 1x, img/slider-1-desktop@2x.webp 2x">
+
+                  <source media="(max-width: 1023px)" srcset="img/slider-1-tablet@1x.jpg 1x, img/slider-1-tablet@2x.jpg 2x">
+                  <img src="img/slider-1-desktop@1x.jpg" srcset="img/slider-1-desktop@2x.jpg 2x" width="1355" height="750" alt="Lorem ipsum dolor sit amet">
+                </picture>
+                <p>Lorem ipsum dolor<br> sit amet</p>
+              </li>
+              <li class="slider__item">
+                <picture>
+                  <source type="image/webp" media="(max-width: 1023px)" srcset="img/slider-2-tablet@1x.webp 1x, img/slider-2-tablet@2x.webp 2x">
+                  <source type="image/webp" srcset="img/slider-2-desktop@1x.webp 1x, img/slider-2-desktop@2x.webp 2x">
+
+                  <source media="(max-width: 1023px)" srcset="img/slider-2-tablet@1x.jpg 1x, img/slider-2-tablet@2x.jpg 2x">
+                  <img src="img/slider-2-desktop@1x.jpg" srcset="img/slider-2-desktop@2x.jpg 2x" width="1355" height="750" alt="Lorem ipsum dolor sit amet consectetur">
+                </picture>
+                <p>Lorem ipsum dolor<br> sit amet consectetur</p>
+              </li>
+              <li class="slider__item">
+                <picture>
+                  <source type="image/webp" media="(max-width: 1023px)" srcset="img/slider-3-tablet@1x.webp 1x, img/slider-3-tablet@2x.webp 2x">
+                  <source type="image/webp" srcset="img/slider-3-desktop@1x.webp 1x, img/slider-3-desktop@2x.webp 2x">
+
+                  <source media="(max-width: 1023px)" srcset="img/slider-3-tablet@1x.jpg 1x, img/slider-3-tablet@2x.jpg 2x">
+                  <img src="img/slider-3-desktop@1x.jpg" srcset="img/slider-3-desktop@2x.jpg 2x" width="1355" height="750" alt="Lorem ipsum dolor sit amet">
+                </picture>
+                <p>Lorem ipsum dolor<br> sit amet</p>
+              </li>
+            </ul>
+          </div>
+          <button class="slider__control slider__control--prev slider__control--show"><span class="visually-hidden">Previous</span></button>
+          <button class="slider__control slider__control--next slider__control--show"><span class="visually-hidden">Next</span></button>
+        </div>
+      </section>
+      <section class="qualities">
+        <h2 class="qualities__heading">Product Qualities</h2>
+        <ul class="qualities__list">
+          <li class="qualities__item">
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ad, magnam.</p>
+            <svg width="48" height="48">
+              <use xlink:href="#icon-heart"></use>
+            </svg>
+          </li>
+          <li class="qualities__item">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero, voluptates.</p>
+            <svg width="48" height="48">
+              <use xlink:href="#icon-pills"></use>
+            </svg>
+          </li>
+          <li class="qualities__item">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis, iusto!</p>
+            <svg width="48" height="48">
+              <use xlink:href="#icon-like"></use>
+            </svg>
+          </li>
+        </ul>
+      </section>
+      <section class="order" id="order">
+        <div class="order__container">
+          <div class="order__left">
+            <h2 class="order__heading">Buy Now!</h2>
+            <picture class="order__product">
+              <source type="image/webp" media="(max-width: 767px)" srcset="img/potencialex-mobile@1x.webp 1x, img/potencialex-mobile@2x.webp 2x">
+              <source type="image/webp" srcset="img/potencialex-desktop@1x.webp 1x, img/potencialex-desktop@2x.webp 2x">
+
+              <source media="(max-width: 767px)" srcset="img/potencialex-mobile@1x.png 1x, img/potencialex-mobile@2x.png 2x">
+              <img src="img/potencialex-desktop@1x.png" srcset="img/potencialex-desktop@2x.png 2x" width="365" height="255" alt="Potencialex">
+            </picture>
+            <div class="order__price-wrap">
+              <span class="order__price order__price--old">€98</span>
+              <span class="order__price order__price--new">€39</span>
+              <p class="order__text">
+                Lorem ipsum dolor sit amet consectetur!
+              </p>
+            </div>
+          </div>
+          <form class="order__form form" action="POST">
+            <div class="form__field">
+              <input type="text" id="id-name" name="name" placeholder="Full name" required>
+              <label for="id-name">Name:</label>
+              <span class="tooltip">Giacomo Casanova</span>
+            </div>
+            <div class="form__field">
+              <input type="tel" id="id-tel" name="tel" placeholder="+39 XXX XXX XX XX" required>
+              <label for="id-tel">Phone:</label>
+              <span class="tooltip">+39 XXX XXX XX XX</span>
+            </div>
+            <button class="button button--order order__button" type="submit">Order*</button>
+            <p class="order__offer-text">
+              *Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat, suscipit!
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aperiam.
+            </p>
+          </form>
+        </div>
+        <div class="order__timer">
+          <p>Limited offer!</p>
+          <div class="countdown" id="countdown">
+            <div class="countdown__number">
+              <span class="hours countdown__time"></span>
+              <span class="countdown__text">Hours</span>
+            </div>
+            <div class="countdown__number">
+              <span class="minutes countdown__time"></span>
+              <span class="countdown__text">Minutes</span>
+            </div>
+            <div class="countdown__number">
+              <span class="seconds countdown__time"></span>
+              <span class="countdown__text">Seconds</span>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <script src="js/script-min.js"></script>
+    <script>
+      var scroll = new SmoothScroll('a[href*="#"]', {
+        speed: 500,
+        speedAsDuration: true
+      });
+    </script>
+
+  </body>
+</html>
